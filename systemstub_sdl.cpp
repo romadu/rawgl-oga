@@ -355,8 +355,14 @@ void SystemStub_SDL::processEvents() {
 				case SDL_CONTROLLER_BUTTON_BACK:
 					_pi.back = pressed;
 					break;
-				case SDL_CONTROLLER_BUTTON_GUIDE:
+				case SDL_CONTROLLER_BUTTON_LEFTSHOULDER:
 					_pi.code = pressed;
+					break;
+				case SDL_CONTROLLER_BUTTON_RIGHTSHOULDER:
+					_pi.code = pressed;
+					break; 
+				case SDL_CONTROLLER_BUTTON_GUIDE:
+					_pi.quit = pressed;
 					break;
 				case SDL_CONTROLLER_BUTTON_START:
 					_pi.pause = pressed;
