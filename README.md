@@ -11,13 +11,14 @@ Use `make -f Makefile` to compile game
 
 Create your RAWGL.sh file like so
 
-``
+```
 #!/bin/bash
 
 cd /roms/ports/rawgl/
 
 SDL_GAMECONTROLLERCONFIG="add sdl game controller info here" ./rawgl --window=480x320 --render=software --datapath="/roms/ports/rawgl/gamedata" --language=us
-``
+
+```
 
 If using the 20th Anniversary Edition switch `--render=software` to `--render=original`.
 
