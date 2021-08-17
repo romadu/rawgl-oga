@@ -13,7 +13,9 @@ Create your RAWGL.sh file like so
 
 ``
 #!/bin/bash
+
 cd /roms/ports/rawgl/
+
 SDL_GAMECONTROLLERCONFIG="add sdl game controller info here" ./rawgl --window=480x320 --render=software --datapath="/roms/ports/rawgl/gamedata" --language=us
 ``
 
