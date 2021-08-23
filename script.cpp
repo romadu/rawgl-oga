@@ -620,6 +620,10 @@ void Script::updateInput() {
 			ud = jd = -1;
 			m |= 8; // jump
 		}
+		if (_stub->_pi.jump) {
+			jd = -1;
+			m |= 8; // jump
+		}
 	}
 	if (!(_res->getDataType() == Resource::DT_AMIGA || _res->getDataType() == Resource::DT_ATARI)) {
 		_scriptVars[VAR_HERO_POS_UP_DOWN] = ud;
